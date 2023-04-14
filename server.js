@@ -5,8 +5,8 @@ const server = http.createServer(app);
 
 // Rest API's
 
-app.get('/', (req, res) => {
-    res.send('<h1>Hello world</h1>');
-  });
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
 
 app.listen(5001, () => console.log("Server is listening on the port 5001"));
